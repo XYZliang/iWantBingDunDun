@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta content="width=device-width, initial-scale=0.4, minimum-scale=0.4, maximum-scale=0.5,user-scalable=no,shrink-to-fit=no"
+          name="viewport">
+    <meta charset="UTF-8">
+    <title>听说你也想要冰墩墩？</title>
+    <link href="./images/BingDunDun.ico" rel="icon">
+    <script src="js/StyleKitName.js" type="text/javascript"></script>
+  <style>
+    #canvasDiv {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+  </style>
+    <script>
+        window.onload = function () {
+          let width=mainCanvas.width
+          let height=mainCanvas.height
+          let zoomW=mainCanvas.width/document.documentElement.clientWidth
+          let zoomH=mainCanvas.height/document.documentElement.clientHeight
+          zoomW=1/zoomW
+          zoomH=1/zoomH
+          zoomW=Math.floor(zoomW*100)*0.01-0.05
+          zoomH=Math.floor(zoomH*100)*0.01-0.05
+          // if(zoomW>0.9)
+          //   zoomW=0.9
+          // if(zoomH>0.9)
+          //   zoomH=0.9
+          let zoom=Math.min(zoomW,zoomH)
+          mainCanvas.style.zoom=zoom
+
+          StyleKitName.drawCanvas1('mainCanvas')
+        };
+    </script>
+</head>
+<body style="margin: 0;">
+<div id="canvasDiv">
+    <canvas height="1262" id="mainCanvas" width="1068">您的浏览器不支持HTML5 canvas，请换一个浏览器。</canvas>
+</div>
+</body>
+</html>
