@@ -11,7 +11,7 @@ https://www.jxufesoftware.club/iWantBingDunDun/
 
 1. 首先你需要一张冰墩墩的美图
 
-   ![微博 周游水星](README/微博 周游水星.JPG)
+   ![微博 周游水星](README/微博周游水星.JPG)
 
 2. 删除多余部分，仅留下你想要绘出的部分
 
